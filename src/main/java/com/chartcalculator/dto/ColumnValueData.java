@@ -1,4 +1,4 @@
-package com.chartcalculator;
+package com.chartcalculator.dto;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

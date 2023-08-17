@@ -1,5 +1,6 @@
-package com.chartcalculator;
+package com.chartcalculator.service;
 
+import com.chartcalculator.dto.ColumnValueData;
 import com.chartcalculator.repository.ProductHouseChartRepositoryCustom;
 import lombok.RequiredArgsConstructor;
 import org.springframework.boot.CommandLineRunner;

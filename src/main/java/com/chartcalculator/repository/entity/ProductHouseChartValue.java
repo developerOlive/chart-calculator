@@ -1,4 +1,4 @@
-package com.chartcalculator.repository;
+package com.chartcalculator.repository.entity;
 
 
 import jakarta.persistence.*;

@@ -2,6 +2,7 @@ package com.chartcalculator.repository;
 
 import static com.querydsl.core.types.PathMetadataFactory.*;
 
+import com.chartcalculator.repository.entity.ProductHouseChartVariable;
 import com.querydsl.core.types.dsl.*;
 
 import com.querydsl.core.types.PathMetadata;

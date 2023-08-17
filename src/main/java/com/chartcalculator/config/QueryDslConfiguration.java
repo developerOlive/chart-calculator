@@ -1,4 +1,4 @@
-package com.chartcalculator;
+package com.chartcalculator.config;
 
 import com.querydsl.jpa.impl.JPAQueryFactory;
 import jakarta.persistence.EntityManager;

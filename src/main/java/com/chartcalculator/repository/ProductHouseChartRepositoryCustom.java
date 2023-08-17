@@ -1,6 +1,6 @@
 package com.chartcalculator.repository;
 
-import com.chartcalculator.ColumnValueData;
+import com.chartcalculator.dto.ColumnValueData;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

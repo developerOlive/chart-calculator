@@ -1,6 +1,6 @@
 package com.chartcalculator.repository;
 
-import com.chartcalculator.ColumnValueData;
+import com.chartcalculator.dto.ColumnValueData;
 import com.querydsl.core.types.Projections;
 import com.querydsl.jpa.impl.JPAQueryFactory;
 import lombok.RequiredArgsConstructor;
