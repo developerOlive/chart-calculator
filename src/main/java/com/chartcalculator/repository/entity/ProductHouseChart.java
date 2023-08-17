@@ -4,6 +4,8 @@ import jakarta.persistence.*;
 import lombok.Getter;
 import lombok.Setter;
 
+import java.time.LocalDateTime;
+
 @Getter
 @Setter
 @Entity
@@ -22,10 +24,10 @@ public class ProductHouseChart {
     private String chartType;
 
     @Column(name = "launch_start")
-    private String launchStart;
+    private LocalDateTime launchStart;
 
     @Column(name = "launch_end")
-    private String launchEnd;
+    private LocalDateTime launchEnd;
 
     @Column(name = "grade_level")
     private int gradeLevel;

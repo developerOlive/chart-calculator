@@ -8,5 +8,5 @@ import java.util.List;
 @Repository
 public interface ProductHouseChartRepositoryCustom {
 
-    List<ColumnValueData> selectOverviewTable();
+    List<ColumnValueData> selectOverviewTable(long overviewTableSeq);
 }

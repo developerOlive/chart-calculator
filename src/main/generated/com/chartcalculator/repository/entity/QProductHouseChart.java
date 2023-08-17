@@ -1,8 +1,7 @@
-package com.chartcalculator.repository;
+package com.chartcalculator.repository.entity;
 
 import static com.querydsl.core.types.PathMetadataFactory.*;
 
-import com.chartcalculator.repository.entity.ProductHouseChart;
 import com.querydsl.core.types.dsl.*;
 
 import com.querydsl.core.types.PathMetadata;
@@ -16,7 +15,7 @@ import com.querydsl.core.types.Path;
 @Generated("com.querydsl.codegen.DefaultEntitySerializer")
 public class QProductHouseChart extends EntityPathBase<ProductHouseChart> {
 
-    private static final long serialVersionUID = 911266372L;
+    private static final long serialVersionUID = -1242637781L;
 
     public static final QProductHouseChart productHouseChart = new QProductHouseChart("productHouseChart");
 
@@ -24,9 +23,9 @@ public class QProductHouseChart extends EntityPathBase<ProductHouseChart> {
 
     public final NumberPath<Integer> gradeLevel = createNumber("gradeLevel", Integer.class);
 
-    public final StringPath launchEnd = createString("launchEnd");
+    public final DateTimePath<java.time.LocalDateTime> launchEnd = createDateTime("launchEnd", java.time.LocalDateTime.class);
 
-    public final StringPath launchStart = createString("launchStart");
+    public final DateTimePath<java.time.LocalDateTime> launchStart = createDateTime("launchStart", java.time.LocalDateTime.class);
 
     public final NumberPath<Long> productHouseChartSeq = createNumber("productHouseChartSeq", Long.class);
 

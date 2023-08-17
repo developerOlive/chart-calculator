@@ -11,4 +11,9 @@ public class CalculatorContext {
     private UserInfo userInfo;
     private HouseInfo houseInfo;
     private BigDecimal ltv;
+
+    public void addFailResultList(long productSeq, String message) {
+        // 실패한 계산 데이터 처리
+    }
+
 }

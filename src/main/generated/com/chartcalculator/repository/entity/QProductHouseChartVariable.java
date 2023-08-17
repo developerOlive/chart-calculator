@@ -1,8 +1,7 @@
-package com.chartcalculator.repository;
+package com.chartcalculator.repository.entity;
 
 import static com.querydsl.core.types.PathMetadataFactory.*;
 
-import com.chartcalculator.repository.entity.ProductHouseChartVariable;
 import com.querydsl.core.types.dsl.*;
 
 import com.querydsl.core.types.PathMetadata;
@@ -17,7 +16,7 @@ import com.querydsl.core.types.dsl.PathInits;
 @Generated("com.querydsl.codegen.DefaultEntitySerializer")
 public class QProductHouseChartVariable extends EntityPathBase<ProductHouseChartVariable> {
 
-    private static final long serialVersionUID = 619414752L;
+    private static final long serialVersionUID = -816663097L;
 
     private static final PathInits INITS = PathInits.DIRECT2;
 

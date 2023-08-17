@@ -8,9 +8,9 @@ import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
-import static com.chartcalculator.repository.QProductHouseChart.productHouseChart;
-import static com.chartcalculator.repository.QProductHouseChartValue.productHouseChartValue;
-import static com.chartcalculator.repository.QProductHouseChartVariable.productHouseChartVariable;
+import static com.chartcalculator.repository.entity.QProductHouseChart.productHouseChart;
+import static com.chartcalculator.repository.entity.QProductHouseChartValue.productHouseChartValue;
+import static com.chartcalculator.repository.entity.QProductHouseChartVariable.productHouseChartVariable;
 
 @Repository
 @RequiredArgsConstructor
@@ -19,7 +19,7 @@ public class ProductHouseChartRepositoryImpl implements ProductHouseChartReposit
     private final JPAQueryFactory queryFactory;
 
     @Override
-    public List<ColumnValueData> selectOverviewTable() {
+    public List<ColumnValueData> selectOverviewTable(long overviewTableSeq) {
         return queryFactory
                 .select(Projections.fields(ColumnValueData.class,
                         productHouseChart.productHouseSeq,
@@ -37,6 +37,7 @@ public class ProductHouseChartRepositoryImpl implements ProductHouseChartReposit
                 .from(productHouseChart)
                 .leftJoin(productHouseChartVariable).on(productHouseChart.productHouseChartSeq.eq(productHouseChartVariable.productHouseChart.productHouseChartSeq))
                 .leftJoin(productHouseChartValue).on(productHouseChartVariable.productHouseChartValue.productHouseChartValueSeq.eq(productHouseChartValue.productHouseChartValueSeq))
+                .where(productHouseChart.productHouseChartSeq.eq(overviewTableSeq))
                 .fetch();
     }
 }

@@ -16,9 +16,10 @@ import java.util.Map;
  */
 @Getter
 @ToString
-public class overviewTable {
+public class OverviewTable {
 
     private long overviewTabSeq;
+    private long productSeq;
     private LocalDateTime startAt;
     private LocalDateTime endAt;
     private final Map<Long, Row> rowMap = new LinkedHashMap<>();
@@ -62,6 +63,10 @@ public class overviewTable {
         this.overviewTabSeq = overviewTabSeq;
     }
 
+    public void setProductSeq(long productSeq) {
+        this.productSeq = productSeq;
+    }
+
     public void setStartAt(LocalDateTime startAt) {
         this.startAt = startAt;
     }
@@ -69,4 +74,8 @@ public class overviewTable {
     public void setEndAt(LocalDateTime endAt) {
         this.endAt = endAt;
     }
+
+//    public boolean useIn(LocalDateTime now) {
+//        return !startAt.isAfter(now) && endAt.isAfter(now);
+//    }
 }
