@@ -4,8 +4,6 @@ import com.chartcalculator.type.ValueType;
 import lombok.Data;
 
 import java.math.BigDecimal;
-import java.util.HashSet;
-import java.util.Set;
 
 /*
     조견표 변수 입력값 테이블 - 변수 입력 값
@@ -15,14 +13,7 @@ public class ColumnValue {
     private ValueType valueType;
     private BigDecimal minValue = BigDecimal.ZERO;
     private BigDecimal maxValue = BigDecimal.ZERO;
-    private Set<String> detailValue = null;
-
-    public void addDetailValue(String value) {
-        if (detailValue == null) {
-            detailValue = new HashSet<>();
-        }
-        detailValue.add(value);
-    }
+    private String detailValue = null;
 
     // 사용자의 조건이 조견표 변수와 일치하는지 체킹
     public boolean okCondition(UserValue userValue) {
