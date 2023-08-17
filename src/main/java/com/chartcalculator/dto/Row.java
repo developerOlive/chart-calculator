@@ -13,6 +13,7 @@ public class Row {
 
     private long overviewTblRowSeq;
     private BigDecimal value = BigDecimal.ZERO;
+    private String chartType;
     private Map<ColumnType, Column> columnMap = new LinkedHashMap<>();
 
     public void addColumn(ColumnType columnType, BigDecimal minValue, BigDecimal maxValue, String detailValue) {
