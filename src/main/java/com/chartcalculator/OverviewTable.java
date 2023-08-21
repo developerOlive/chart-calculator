@@ -75,7 +75,7 @@ public class OverviewTable {
         this.endAt = endAt;
     }
 
-//    public boolean useIn(LocalDateTime now) {
-//        return !startAt.isAfter(now) && endAt.isAfter(now);
-//    }
+   public boolean useIn(LocalDateTime now) {
+       return !startAt.isAfter(now) && endAt.isAfter(now);
+   }
 }
